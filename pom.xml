@@ -30,6 +30,16 @@
     </pluginManagement>
     <plugins>
       <plugin>
+        <!-- Configure Maven Compiler Plugin -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>7</source> <!-- or higher version -->
+          <target>7</target> <!-- or higher version -->
+        </configuration>
+      </plugin>
+      <plugin>
         <!-- Build an executable JAR -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
